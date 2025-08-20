@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;1,100&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 /* Google Fonts'tan 'Poppins' fontunu içe aktarıyoruz */
 
 * {
@@ -30,7 +31,7 @@ body {
   letter-spacing: 0.1rem;
 }
   .header .logo {
-    font-weight: 900;
+    font-weight: 100;
     letter-spacing: 0.7rem;
   }
 .logo {
@@ -38,14 +39,14 @@ body {
   text-decoration: none; /* Alt çizgi olmasın */
   color: white; /* Beyaz renk */
   padding: 0 0 1.5rem; /* Alttan 1.5rem boşluk */
-  font-weight: 600; /* Kalın font */
+  font-weight: 100; /* Kalın font */
 }
 .navbar a {
   position: relative; /* Hover efektindeki pseudo-element için referans konum */
   font-size: 1.6rem; /* Navbar linklerinin boyutu */
   text-decoration: none; /* Alt çizgi olmasın */
   color: rgb(255, 255, 255); /* Beyaz renk */
-  font-weight: 700; /* Orta kalınlık font */
+  font-weight: 100; /* Orta kalınlık font */
   margin-left: 5rem; /* Linkler arası boşluk */
 }
 /* Navbar linklerinin alt çizgi hover efekti */
@@ -85,9 +86,10 @@ body {
             position: absolute;
             left: 10%;
             top: 25%;
+            font-weight: 100;
           }
             .home-content h3 {
-              font-weight: 900;
+              font-weight: 200;
               font-size: 2.6rem;
               text-decoration: underline ;
               text-underline-offset: 0.8rem;
@@ -107,18 +109,19 @@ body {
           justify-content: flex-start;    /* İçerikleri yatayda sola yasla */
           align-items: center;            /* İçerikleri dikeyde ortala */
             }
-            #aboutme {
+            .about-content h6 {
               font-size: 3rem;
               color: white;
-              font-weight: 700;
+              font-weight: 200;
             }
             .about-content p{
               font-size: 1.6rem;              /* Paragrafın yazı boyutu */
-              font-weight: 500px;
+              font-weight: 100px;
               color: white;                 /* Yazı rengi beyaz */
               max-width: 500px;               /* Paragraf en fazla 500px genişlikte olsun */
               line-height: 1.6;               /* Satırlar arası boşluk (okunabilirlik için) */
               margin-top: 1rem;               /* Başlıktan 1rem boşluk bırak */
+              font-weight: 100;
             }
             .profil-pic {
               width: 150px;
