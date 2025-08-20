@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;1,100&display=swap'); 
+/* Google Fonts'tan 'Poppins' fontunu içe aktarıyoruz */
+
+* {
+  margin: 0; /* Tüm elementlerin varsayılan marginlerini sıfırla */
+  padding: 0; /* Tüm elementlerin varsayılan paddinglerini sıfırla */
+  box-sizing: border-box; /* Padding ve border genişliği dahil olsun */
+  font-family: "poppins", sans-serif; /* Tüm yazılara Poppins fontu uygula */
+}
+html {
+  scroll-behavior: smooth; /* Anchor linklere yumuşak kaydırma efekti */
+}
+body {
+  background: url("Images/bg_dark01.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.header {
+  top: 0; /* Header'ı en üste hizala */
+  left: 0; /* Header'ı sola hizala */
+  width: 100%; /* Header tam genişlikte olsun */
+  padding: 3rem 3%; /* Üst-alt 3rem, sağ-sol %3 padding */
+  backdrop-filter: blur(5px); /* Arka plan bulanıklaştırma efekti */
+  display: flex; /* İçerikleri yatay hizala */
+  justify-content: space-between; /* Logo sola, navbar sağa yerleşsin */
+  align-items: center; /* Dikeyde ortala */
+  z-index: 100; /* Diğer içeriklerin üstünde görünsün */
+}
+.logo {
+  font-size: 3rem; /* Logo yazısının boyutu */
+  text-decoration: none; /* Alt çizgi olmasın */
+  color: white; /* Beyaz renk */
+  padding: 0 0 1.5rem; /* Alttan 1.5rem boşluk */
+  font-weight: 600; /* Kalın font */
+}
+.navbar a {
+  position: relative; /* Hover efektindeki pseudo-element için referans konum */
+  font-size: 1.7rem; /* Navbar linklerinin boyutu */
+  text-decoration: none; /* Alt çizgi olmasın */
+  color: white; /* Beyaz renk */
+  font-weight: 500; /* Orta kalınlık font */
+  margin-left: 5rem; /* Linkler arası boşluk */
+}
+/* Navbar linklerinin alt çizgi hover efekti */
+.navbar a::after {
+  content: ""; /* Boş pseudo-element oluştur */
+  position: absolute; /* Linke göre konumlandır */
+  left: 50%; /* Ortadan başlasın */
+  bottom: -2px; /* Yazının hemen altına yerleşsin */
+  transform: translateX(-50%) scaleX(0); /* Başlangıçta ortada görünmesin */
+  transform-origin: center; /* Ortadan genişlesin */
+  width: 100%; /* Link genişliği kadar olsun */
+  height: 1px; /* Çizgi kalınlığı */
+  background-color: white; /* Çizgi rengi */
+  transition: transform 0.3s ease; /* Animasyonu yumuşak yap */
+}
+.navbar a:hover::after {
+  transform: translateX(-50%) scaleX(1); /* Hover olunca çizgi tam genişlikte olsun */
+}
+  section{
+    min-height: 100vh; /* Her section tam ekran yüksekliğinde olsun */
+    padding: 1rem 9% 2rem; /* Üstten 1rem, sağ-sol %9, alttan 2rem boşluk */
+  }
+    .all-heading {
+       font-size: 5rem; /* Section başlıklarının boyutu */
+       color: rgb(255, 255, 255); /* Beyaz renk */
+    }
+        .home{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .about{
+          backdrop-filter: blur(2px);
+          background: rgba(0, 0, 0, 0.5);
+          min-height: 100vh;              /* Section en az ekran yüksekliği kadar olsun */
+          padding: 1rem 9% 2rem;          /* Üst:1rem, sağ-sol:%9, alt:2rem boşluk bırak */
+          display: flex;                  /* Flexbox kullan, hizalamayı kolaylaştır */
+          justify-content: flex-start;    /* İçerikleri yatayda sola yasla */
+          align-items: center;            /* İçerikleri dikeyde ortala */
+        }
+        .about-content p{
+          font-size: 1.6rem;              /* Paragrafın yazı boyutu */
+          font-weight: 500px;
+          color: white;                 /* Yazı rengi beyaz */
+          max-width: 500px;               /* Paragraf en fazla 500px genişlikte olsun */
+          line-height: 1.6;               /* Satırlar arası boşluk (okunabilirlik için) */
+          margin-top: 1rem;               /* Başlıktan 1rem boşluk bırak */
+        }
+            .profil-pic {
+              width: 150px;
+              height: 150px;
+              object-fit: cover;
+              border-radius: 50%;
+              margin-bottom: 1rem;
+              border: 2px solid white;
+            }
+        .portfolio{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .contact{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
