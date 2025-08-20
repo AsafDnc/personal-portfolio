@@ -26,7 +26,13 @@ body {
   justify-content: space-between; /* Logo sola, navbar sağa yerleşsin */
   align-items: center; /* Dikeyde ortala */
   z-index: 100; /* Diğer içeriklerin üstünde görünsün */
+  background-color: rgba(0, 0, 0, 0.2);
+  letter-spacing: 0.1rem;
 }
+  .header .logo {
+    font-weight: 900;
+    letter-spacing: 0.7rem;
+  }
 .logo {
   font-size: 3rem; /* Logo yazısının boyutu */
   text-decoration: none; /* Alt çizgi olmasın */
@@ -36,10 +42,10 @@ body {
 }
 .navbar a {
   position: relative; /* Hover efektindeki pseudo-element için referans konum */
-  font-size: 1.7rem; /* Navbar linklerinin boyutu */
+  font-size: 1.6rem; /* Navbar linklerinin boyutu */
   text-decoration: none; /* Alt çizgi olmasın */
-  color: white; /* Beyaz renk */
-  font-weight: 500; /* Orta kalınlık font */
+  color: rgb(255, 255, 255); /* Beyaz renk */
+  font-weight: 700; /* Orta kalınlık font */
   margin-left: 5rem; /* Linkler arası boşluk */
 }
 /* Navbar linklerinin alt çizgi hover efekti */
@@ -70,7 +76,28 @@ body {
           display: flex;
           justify-content: center;
           align-items: center;
+          position: relative;
         }
+          .home-content {
+            color: white;
+            font-size: 1.4rem;
+            letter-spacing: 0.07rem;
+            position: absolute;
+            left: 10%;
+            top: 25%;
+          }
+            .home-content h3 {
+              font-weight: 900;
+              font-size: 2.6rem;
+              text-decoration: underline ;
+              text-underline-offset: 0.8rem;
+              text-decoration-thickness: 1px;
+              text-decoration-color: white;
+              letter-spacing: 0.12rem;
+            }
+            .home p {
+              line-height: 1.8;
+            }
         .about{
           backdrop-filter: blur(2px);
           background: rgba(0, 0, 0, 0.5);
@@ -79,15 +106,20 @@ body {
           display: flex;                  /* Flexbox kullan, hizalamayı kolaylaştır */
           justify-content: flex-start;    /* İçerikleri yatayda sola yasla */
           align-items: center;            /* İçerikleri dikeyde ortala */
-        }
-        .about-content p{
-          font-size: 1.6rem;              /* Paragrafın yazı boyutu */
-          font-weight: 500px;
-          color: white;                 /* Yazı rengi beyaz */
-          max-width: 500px;               /* Paragraf en fazla 500px genişlikte olsun */
-          line-height: 1.6;               /* Satırlar arası boşluk (okunabilirlik için) */
-          margin-top: 1rem;               /* Başlıktan 1rem boşluk bırak */
-        }
+            }
+            #aboutme {
+              font-size: 3rem;
+              color: white;
+              font-weight: 700;
+            }
+            .about-content p{
+              font-size: 1.6rem;              /* Paragrafın yazı boyutu */
+              font-weight: 500px;
+              color: white;                 /* Yazı rengi beyaz */
+              max-width: 500px;               /* Paragraf en fazla 500px genişlikte olsun */
+              line-height: 1.6;               /* Satırlar arası boşluk (okunabilirlik için) */
+              margin-top: 1rem;               /* Başlıktan 1rem boşluk bırak */
+            }
             .profil-pic {
               width: 150px;
               height: 150px;
@@ -96,6 +128,11 @@ body {
               margin-bottom: 1rem;
               border: 2px solid white;
             }
+        .skills {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
         .portfolio{
           display: flex;
           justify-content: center;
