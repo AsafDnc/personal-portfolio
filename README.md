@@ -1,2 +1,4 @@
-# personal-portfolio
-My personal portfolio website built with HTML and CSS.
+# Personal Portfolio Website
+
+- This is my personal portfolio website built using HTML & CSS.
+- It includes sections about me, my projects, and contact information.
